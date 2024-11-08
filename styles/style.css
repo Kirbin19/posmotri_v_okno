@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -54,7 +55,6 @@ ol {
   gap: 30px;
   width: 1140px;
   margin: auto;
-  padding: 133px 0;
 }
 
 .title {
@@ -142,6 +142,7 @@ ol {
   display: block;
   text-decoration: none;
   color: #fff;
+  margin: 2px;
 }
 
 .content__video-card-title {
@@ -168,11 +169,16 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 22px;
 }
 
 .search-form__fieldset {
   border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  justify-content: flex-end;
 }
 
 .search-form__label {
@@ -231,6 +237,15 @@ ol {
   line-height: 21.6px;
   color: #fff;
   appearance: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .search-form__textfield:focus {
